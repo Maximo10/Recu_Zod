@@ -1,0 +1,145 @@
+body{
+    background-color: wheat;
+    padding: 40px 20px;
+}
+
+
+h1{
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:30px;
+    max-width:530px;            
+    font-size:30px;
+    border-radius:8px;
+    color: black;            
+}
+.contenedor{
+    max-width:550px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.tarjeta{
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+}
+.tarjeta h3{
+    color: black;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgb(0, 162, 255);
+    font-size: 25px;
+}
+input{
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size:14px;
+}
+input:focus{
+    outline: none;
+    border-color: rgb(0, 140, 255);
+}
+label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    color:black;
+    font-size: 16px;
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    cursor: pointer;
+    width: auto;
+    margin-bottom: 0;
+}
+button{
+    background: rgb(0, 110, 255);
+    color: white;
+    border: none;
+    padding:10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    width:100%;
+    font-size: 16px;
+}
+button:hover{
+    background:rgb(0, 204, 255);
+}
+
+
+.resultado{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    gap:15px;
+}
+.resultado_front{
+    padding:12px;
+    box-sizing:8px;
+    font-size:13px;
+    display:none;
+}
+.resultado_front.error{
+    display: block;
+    background:rgb(255, 179, 179);
+    color:rgb(143, 0, 0);
+    border: 1px solid red;
+    border-radius:8px;            
+}
+.resultado_back{
+    padding:12px;
+    box-sizing:8px;
+    font-size:13px;
+    display:none;
+}
+.resultado_back.exito{
+    display: block;
+    background:rgb(188, 255, 179);
+    color:rgb(41, 143, 0);
+    border: 1px solid rgb(0, 255, 34);
+    border-radius:8px;           
+}
+.resultado_back.error{
+    display: block;
+    background:rgb(255, 179, 179);
+    color:rgb(143, 0, 0);
+    border: 1px solid red;
+    border-radius:8px;
+}
+.resultado_back.pre{
+    margin: 5px 0 0 0;
+    white-space: pre-wrap;
+    font-size: 12px;            
+}
+
+
+.estado_api{
+    background: white;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom:30px;
+    padding:10px;
+    border-radius:8px;
+    max-width: 530px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.estado_api.conectado{
+    background: rgb(199, 255, 199);
+    color:rgb(0, 90, 0);
+    border: 1px solid rgb(0, 150, 0);
+}
+.estado_api.desconectado{
+    background: rgb(255, 217, 217);
+    color:rgb(90, 0, 0);
+    border: 1px solid rgb(179, 0, 0);
+}

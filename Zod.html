@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Front Para Zod</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+
+    <body>
+        <h1>Prueba de validaciones con Zod</h1>
+        <div class="estado_api" id="estadoapi">
+            Comprobando conexión API...
+        </div>
+        <div class="contenedor">
+            <div class="tarjeta">
+                <h3>Datos del Usuario</h3>
+                <input type="text" id="nombre" placeholder="Nombre (2 caracteres mínimo)">
+                <input type="email" id="email" placeholder="ejemplo@gmail.com">
+                <input type="number" id="edad" placeholder="Edad">
+                <label>
+                    <input type="checkbox" id="admin"> ¿Es Admin?
+                </label>
+                <div>
+                    <button onclick="validar()">Validar</button>
+                </div>
+                <!-- Resultado  -->
+                <div class="resultado">
+                    <div class="resultado_front" id="resultadofront"></div>
+                    <div class="resultado_back" id="resultadoback"></div>
+                </div>
+            </div>                     
+        </div>
+    </body>
+    <script src="Escript.js"></script>
+</html>
